@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: calc(100% - 10px);
+        }
+        body {
+            display: grid;            
+        }
+
+        .item1 {
+            margin: 20px;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row: 1 / span 2;
+            background: blue;
+        }
+
+        .item2 {
+            margin: 20px;
+            grid-column-start: 6;
+            grid-column-end: 12;
+            background: linear-gradient(180deg, #7749F8 0%, rgba(119, 73, 248, 0.64) 100%);
+        }
+
+        .item3 {
+            margin: 20px;
+            grid-column-start: 6;
+            grid-column-end: 12;
+            background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+            height: auto;
+            max-width: 100%;
+            text-align: center;
+            
+        }
+        span {
+            position: relative;
+            top: 44%;
+            color: white;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3">
+        <span>Texto da imagem</span>
+    </div>
+</body>
+</html>
